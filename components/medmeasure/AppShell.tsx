@@ -9,15 +9,15 @@ import MobileBottomNav from "./MobileBottomNav";
 
 export default function AppShell({ children }: { children: ReactNode }) {
   const pathname = usePathname();
-
-  const showBottomNav = pathname?.startsWith("/app");
+  // Show mobile nav on authenticated pages; hide on login or undefined path
+  const showBottomNav = pathname ? !pathname.startsWith("/login") : false;
 
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* App Header */}
       <header className="sticky top-0 z-40 border-b bg-background/70 backdrop-blur">
         <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4">
-          <Link href="/app/dashboard" className="flex items-center gap-2">
+          <Link href="/dashboard" className="flex items-center gap-2">
             <div className="grid h-9 w-9 place-items-center rounded-xl border bg-muted">
               <PencilRuler className="h-5 w-5" />
             </div>
