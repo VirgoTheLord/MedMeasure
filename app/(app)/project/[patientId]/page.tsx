@@ -19,12 +19,13 @@ import { Metric } from "@/components/open/Metric";
 import { ObservationRow } from "@/components/open/ObservationRow";
 import { SummaryCard } from "@/components/open/SummaryCard";
 
-export default function PatientProjectPage({
+export default async function PatientProjectPage({
   params,
 }: {
-  params: { patientId: string };
+  params: Promise<{ patientId: string }>;
 }) {
-  const patientId = decodeURIComponent(params.patientId);
+  const { patientId: rawId } = await params;
+  const patientId = decodeURIComponent(rawId);
 
   const record = mockPatientObservations.find((p) => p.patientId === patientId);
 
