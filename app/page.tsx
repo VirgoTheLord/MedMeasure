@@ -12,10 +12,10 @@ import {
   Smartphone,
   Database,
 } from "lucide-react";
-import { MiniPill } from "@/components/MiniPill";
-import { Step } from "@/components/Step";
-import { FeatureCard } from "@/components/FeatureCard";
-import { Stat } from "@/components/Stat";
+import { MiniPill } from "@/components/landing/MiniPill";
+import { Step } from "@/components/landing/Step";
+import { FeatureCard } from "@/components/landing/FeatureCard";
+import { Stat } from "@/components/landing/Stat";
 
 export default function HomePage() {
   return (
@@ -65,9 +65,9 @@ export default function HomePage() {
             </h1>
 
             <p className="mt-4 text-pretty text-sm leading-6 text-muted-foreground sm:text-base">
-              MedMeasure helps clinicians capture wound images, detect a reference
-              scale (ArUco), correct perspective, outline boundaries, and track
-              healing progress over time across observations.
+              MedMeasure helps clinicians capture wound images, detect a
+              reference scale (ArUco), correct perspective, outline boundaries,
+              and track healing progress over time across observations.
             </p>
 
             <div className="mt-7 flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:items-center sm:justify-center">
@@ -323,11 +323,7 @@ export default function HomePage() {
               </Button>
             </Link>
             <a href="#how-it-works" className="w-full sm:w-auto">
-              <Button
-                size="lg"
-                variant="outline"
-                className="w-full sm:w-auto"
-              >
+              <Button size="lg" variant="outline" className="w-full sm:w-auto">
                 Learn more
               </Button>
             </a>
@@ -358,10 +354,3 @@ export default function HomePage() {
     </main>
   );
 }
-
-
-
-
-
-
-
