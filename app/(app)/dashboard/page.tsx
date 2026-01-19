@@ -49,7 +49,7 @@ export default function DashboardPage() {
               </p>
             </div>
 
-            <Link href="/app/open" className="w-full sm:w-auto">
+            <Link href="/open" className="w-full sm:w-auto">
               <Button variant="outline" className="w-full gap-2 sm:w-auto">
                 <Search className="h-4 w-4" />
                 Search Patient ID
