@@ -7,17 +7,17 @@ import { LayoutDashboard, FolderOpen, PlusCircle } from "lucide-react";
 
 const navItems = [
   {
-    href: "/app/dashboard",
+    href: "/dashboard",
     label: "Dashboard",
     icon: LayoutDashboard,
   },
   {
-    href: "/app/new",
+    href: "/new",
     label: "New",
     icon: PlusCircle,
   },
   {
-    href: "/app/open",
+    href: "/open",
     label: "Open",
     icon: FolderOpen,
   },
@@ -41,7 +41,7 @@ export default function MobileBottomNav() {
                 "flex flex-col items-center justify-center gap-1 rounded-xl px-2 py-2 text-xs transition",
                 active
                   ? "bg-muted text-foreground"
-                  : "text-muted-foreground hover:bg-muted/40 hover:text-foreground"
+                  : "text-muted-foreground hover:bg-muted/40 hover:text-foreground",
               )}
             >
               <Icon className="h-5 w-5" />

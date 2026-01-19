@@ -46,7 +46,7 @@ export default function ProjectCard({ project }: { project: ProjectSummary }) {
         </div>
 
         <Link
-          href={`/app/project/${project.patientId}`}
+          href={`/project/${project.patientId}`}
           className="mt-4 inline-flex w-full"
         >
           <div className="flex w-full items-center justify-center gap-2 rounded-xl border bg-background px-4 py-2 text-sm font-medium transition hover:bg-muted/40">

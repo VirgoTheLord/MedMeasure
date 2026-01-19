@@ -18,7 +18,7 @@ export default function LoginPage() {
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
     // Dummy login → just redirect
-    router.push("/app/dashboard");
+    router.push("/dashboard");
   };
 
   return (
