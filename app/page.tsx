@@ -16,57 +16,31 @@ import { MiniPill } from "@/components/landing/MiniPill";
 import { Step } from "@/components/landing/Step";
 import { FeatureCard } from "@/components/landing/FeatureCard";
 import { Stat } from "@/components/landing/Stat";
+import { NavBar } from "@/components/landing/NavBar";
 
 export default function HomePage() {
   return (
     <main className="relative min-h-screen bg-background bg-[url('/bg.jpg')] bg-fixed bg-no-repeat bg-top text-foreground">
-      <div className="pointer-events-none absolute inset-0 bg-background/40" />
+      <div className="pointer-events-none absolute inset-0 bg-background/70" />
       <div className="relative z-10">
-        {/* Top Nav */}
-        <header className="sticky top-0 z-40 w-full border-b bg-background/70 backdrop-blur">
-          <div className="mx-auto flex h-14 w-full max-w-6xl items-center justify-between px-4">
-            <Link href="/" className="flex items-center gap-2">
-              <div className="grid h-9 w-9 place-items-center rounded-xl border bg-muted">
-                <PencilRuler className="h-5 w-5" />
-              </div>
-              <span className="text-sm font-semibold tracking-tight">
-                MedMeasure
-              </span>
-            </Link>
-
-            <div className="flex items-center gap-2">
-              <Link href="/login">
-                <Button variant="ghost" className="hidden sm:inline-flex">
-                  Login
-                </Button>
-              </Link>
-              <Link href="/login">
-                <Button className="gap-2">
-                  Open App <ArrowRight className="h-4 w-4" />
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </header>
-
-        {/* Hero */}
         <section className="relative overflow-hidden">
+          <NavBar />
           <div className="pointer-events-none absolute inset-0 -z-10">
             <div className="absolute -top-40 left-1/2 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-muted blur-3xl opacity-60" />
           </div>
 
           <div className="mx-auto w-full max-w-6xl px-4 pt-14 pb-10 sm:pt-20 sm:pb-16">
             <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
-              <Badge variant="secondary" className="mb-4">
+              <Badge variant="secondary" className="mb-4 font-space-grotesk">
                 MVP-ready wound measurement UI
               </Badge>
 
-              <h1 className="text-balance text-3xl font-semibold tracking-tight sm:text-5xl">
+              <h1 className="text-balance text-3xl font-semibold tracking-tight sm:text-5xl font-space-grotesk">
                 Wound imaging, tracing & progression tracking —
                 <span className="text-muted-foreground"> simplified.</span>
               </h1>
 
-              <p className="mt-4 text-pretty text-sm leading-6 text-muted-foreground sm:text-base">
+              <p className="mt-4 text-pretty text-sm leading-6 text-muted-foreground sm:text-base font-space-grotesk">
                 MedMeasure helps clinicians capture wound images, detect a
                 reference scale (ArUco), correct perspective, outline
                 boundaries, and track healing progress over time across
@@ -75,7 +49,7 @@ export default function HomePage() {
 
               <div className="mt-7 flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:items-center sm:justify-center">
                 <Link href="/login" className="w-full sm:w-auto">
-                  <Button size="lg" className="w-full gap-2 sm:w-auto">
+                  <Button size="lg" className="w-full gap-2 sm:w-auto font-space-grotesk">
                     Open App <ArrowRight className="h-4 w-4" />
                   </Button>
                 </Link>
@@ -83,20 +57,20 @@ export default function HomePage() {
                   <Button
                     size="lg"
                     variant="outline"
-                    className="w-full sm:w-auto"
+                    className="w-full sm:w-auto font-space-grotesk"
                   >
                     How it works
                   </Button>
                 </a>
               </div>
 
-              <div className="mt-6 text-xs text-muted-foreground">
+              <div className="mt-6 text-xs text-muted-foreground font-space-grotesk">
                 Mobile-first • Works on Android + iOS • Frontend MVP
               </div>
             </div>
 
             {/* Hero Preview Card */}
-            <div className="mt-10 grid gap-4 sm:mt-12 sm:grid-cols-2">
+            <div className="mt-10 grid gap-4 sm:mt-12 sm:grid-cols-2 font-space-grotesk">
               <Card className="overflow-hidden">
                 <CardContent className="p-5">
                   <div className="flex items-start justify-between gap-4">
@@ -169,7 +143,7 @@ export default function HomePage() {
         </section>
 
         {/* Trusted / Stats strip */}
-        <section className="border-y bg-muted/30">
+        <section className="border-y bg-[#5e936c] font-space-grotesk">
           <div className="mx-auto grid max-w-6xl grid-cols-2 gap-4 px-4 py-8 sm:grid-cols-4">
             <Stat label="Mobile-first UI" value="360px+" />
             <Stat label="Core flows" value="New / Open" />
@@ -179,9 +153,9 @@ export default function HomePage() {
         </section>
 
         {/* Features */}
-        <section className="mx-auto w-full max-w-6xl px-4 py-14 sm:py-20">
+        <section className="mx-auto w-full max-w-6xl px-4 py-14 sm:py-20 font-space-grotesk">
           <div className="mx-auto max-w-2xl text-center">
-            <Badge variant="secondary">Features</Badge>
+            <Badge variant="secondary" >Features</Badge>
             <h2 className="mt-3 text-2xl font-semibold tracking-tight sm:text-3xl">
               Everything needed for the MVP.
             </h2>
@@ -230,7 +204,7 @@ export default function HomePage() {
         {/* How it works */}
         <section
           id="how-it-works"
-          className="mx-auto w-full max-w-6xl px-4 py-14 sm:py-20"
+          className="mx-auto w-full max-w-6xl px-4 py-14 sm:py-20 font-space-grotesk"
         >
           <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
             <div>
@@ -308,13 +282,13 @@ export default function HomePage() {
         </section>
 
         {/* CTA */}
-        <section className="bg-muted/30">
+        <section className="border-y bg-[#5e936c] font-space-grotesk">
           <div className="mx-auto flex w-full max-w-6xl flex-col items-center justify-between gap-6 px-4 py-12 text-center sm:py-16 lg:flex-row lg:text-left">
-            <div className="max-w-xl">
-              <h3 className="text-xl font-semibold tracking-tight sm:text-2xl">
+            <div className="max-w-2xl">
+              <h3 className="text-xl font-semibold tracking-tight sm:text-3xl text-[#e6f7df]">
                 Ready to build the MedMeasure MVP frontend?
               </h3>
-              <p className="mt-2 text-sm text-muted-foreground sm:text-base">
+              <p className="mt-2 text-sm sm:text-base text-[#93da97]">
                 This UI is structured for rapid development. Plug in your
                 backend modules (ArUco detection, correction, measurements)
                 anytime.
@@ -340,7 +314,7 @@ export default function HomePage() {
         </section>
 
         {/* Footer */}
-        <footer className="border-t">
+        <footer className="border-t font-space-grotesk">
           <div className="mx-auto flex w-full max-w-6xl flex-col gap-4 px-4 py-10 sm:flex-row sm:items-center sm:justify-between">
             <div className="flex items-center gap-2">
               <div className="grid h-9 w-9 place-items-center rounded-xl border bg-muted">

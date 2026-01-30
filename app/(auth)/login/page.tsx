@@ -17,24 +17,21 @@ export default function LoginPage() {
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
-    // Dummy login → just redirect
     router.push("/dashboard");
   };
 
   return (
     <main className="min-h-screen bg-background text-foreground">
-      {/* Top bar */}
-      <header className="border-b">
-        <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4">
+      <header className="sticky top-0 z-40 w-full shadow-xs">
+        <div className="mx-auto flex h-14 w-full max-w-6xl items-center justify-between px-4">
           <Link href="/" className="flex items-center gap-2">
             <div className="grid h-9 w-9 place-items-center rounded-xl border bg-muted">
               <PencilRuler className="h-5 w-5" />
             </div>
-            <span className="text-sm font-semibold tracking-tight">
+            <span className="text-lg font-semibold tracking-tight font-space-grotesk">
               MedMeasure
             </span>
           </Link>
-
           <Badge variant="secondary" className="hidden sm:inline-flex">
             Dummy Auth (MVP)
           </Badge>
