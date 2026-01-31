@@ -32,7 +32,7 @@ export default function HomePage() {
           <div className="mx-auto w-full max-w-6xl px-4 pt-14 pb-10 sm:pt-20 sm:pb-16">
             <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
               <Badge variant="secondary" className="mb-4 font-space-grotesk">
-                MVP-ready wound measurement UI
+                Advanced Wound Analysis Platform
               </Badge>
 
               <h1 className="text-balance text-3xl font-semibold tracking-tight sm:text-5xl font-space-grotesk">
@@ -65,7 +65,7 @@ export default function HomePage() {
               </div>
 
               <div className="mt-6 text-xs text-muted-foreground font-space-grotesk">
-                Mobile-first • Works on Android + iOS • Frontend MVP
+                Mobile-first • Works on Android + iOS • Clinical Grade Interface
               </div>
             </div>
 
@@ -157,7 +157,7 @@ export default function HomePage() {
           <div className="mx-auto max-w-2xl text-center">
             <Badge variant="secondary" >Features</Badge>
             <h2 className="mt-3 text-2xl font-semibold tracking-tight sm:text-3xl">
-              Everything needed for the MVP.
+              Comprehensive Clinical Toolkit.
             </h2>
             <p className="mt-3 text-sm text-muted-foreground sm:text-base">
               Designed for clinical capture workflows with clean UX, fast steps,
@@ -165,36 +165,39 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-10 grid gap-4 grid-cols-1 md:grid-cols-3">
+            {/* Top Row: 3 Small Boxes */}
             <FeatureCard
-              icon={<Camera className="h-5 w-5" />}
-              title="Capture workflow"
-              description="Camera-first UI with marker detection alerts and smooth capture steps."
-            />
-            <FeatureCard
-              icon={<PencilRuler className="h-5 w-5" />}
-              title="Boundary editing"
-              description="Freehand outline tools, pan/zoom layout, and measurement overlays."
-            />
-            <FeatureCard
-              icon={<LineChart className="h-5 w-5" />}
-              title="Progression tracking"
-              description="Compare latest vs previous images and show healing trend summaries."
-            />
-            <FeatureCard
-              icon={<Database className="h-5 w-5" />}
-              title="Project-based records"
-              description="Patient → Wound → Observations structure, ready for DB sync."
-            />
-            <FeatureCard
-              icon={<Smartphone className="h-5 w-5" />}
-              title="Responsive by default"
-              description="Optimized for phones, then scales cleanly to tablets & desktop."
-            />
-            <FeatureCard
-              icon={<ShieldCheck className="h-5 w-5" />}
+              icon={<ShieldCheck className="h-6 w-6" />}
               title="Clinical-ready design"
               description="Minimal UI, clear typography, and low-error workflow structure."
+              className="md:col-span-1"
+            />
+            <FeatureCard
+              icon={<Camera className="h-6 w-6" />}
+              title="Capture workflow"
+              description="Camera-first UI with marker detection alerts and smooth capture steps."
+              className="md:col-span-1"
+            />
+            <FeatureCard
+              icon={<PencilRuler className="h-6 w-6" />}
+              title="Boundary editing"
+              description="Freehand outline tools, pan/zoom layout, and measurement overlays."
+              className="md:col-span-1"
+            />
+
+            {/* Bottom Row: 1 Small Left, 1 Wide Right */}
+            <FeatureCard
+              icon={<LineChart className="h-6 w-6" />}
+              title="Progression tracking"
+              description="Compare latest vs previous images and show healing trend summaries."
+              className="md:col-span-1"
+            />
+            <FeatureCard
+              icon={<Database className="h-6 w-6" />}
+              title="Project-based records"
+              description="Patient → Wound → Observations structure, ready for DB sync."
+              className="md:col-span-2"
             />
           </div>
         </section>
@@ -286,12 +289,11 @@ export default function HomePage() {
           <div className="mx-auto flex w-full max-w-6xl flex-col items-center justify-between gap-6 px-4 py-12 text-center sm:py-16 lg:flex-row lg:text-left">
             <div className="max-w-2xl">
               <h3 className="text-xl font-semibold tracking-tight sm:text-3xl text-[#e6f7df]">
-                Ready to build the MedMeasure MVP frontend?
+                Ready to Transform Wound Care?
               </h3>
               <p className="mt-2 text-sm sm:text-base text-[#93da97]">
-                This UI is structured for rapid development. Plug in your
-                backend modules (ArUco detection, correction, measurements)
-                anytime.
+                Designed for seamless integration into clinical workflows. Reliable 
+                detection, precise correction, and accurate measurements.
               </p>
             </div>
             <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
@@ -317,13 +319,13 @@ export default function HomePage() {
         <footer className="border-t font-space-grotesk">
           <div className="mx-auto flex w-full max-w-6xl flex-col gap-4 px-4 py-10 sm:flex-row sm:items-center sm:justify-between">
             <div className="flex items-center gap-2">
-              <div className="grid h-9 w-9 place-items-center rounded-xl border bg-muted">
+              <div className="grid h-9 w-9 place-items-center rounded-xl border bg-secondary/20 text-secondary-foreground">
                 <PencilRuler className="h-5 w-5" />
               </div>
               <div>
                 <p className="text-sm font-semibold">MedMeasure</p>
                 <p className="text-xs text-muted-foreground">
-                  Wound measurement MVP UI
+                  Precision Wound Measurement System
                 </p>
               </div>
             </div>

@@ -7,7 +7,7 @@ export function NavBar() {
     <header className="sticky top-0 z-40 w-full">
       <div className="mx-auto flex h-14 w-full max-w-6xl items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2">
-          <div className="grid h-9 w-9 place-items-center rounded-xl border bg-muted">
+          <div className="grid h-9 w-9 place-items-center rounded-xl border bg-secondary/20 text-secondary-foreground">
             <PencilRuler className="h-5 w-5" />
           </div>
           <span className="text-lg font-semibold tracking-tight font-space-grotesk">
