@@ -40,10 +40,10 @@ export default function DashboardPage() {
 
       {/* Quick Search */}
       <Card>
-        <CardContent className="p-5">
+        <CardContent className="p-4">
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
             <div>
-              <p className="text-sm font-semibold">Quick Search</p>
+              <p className="text-lg font-bold">Quick Search</p>
               <p className="text-xs text-muted-foreground">
                 Jump to a patient record by ID.
               </p>

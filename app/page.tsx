@@ -386,8 +386,8 @@ export default function HomePage() {
           </div>
 
           {/* Large Gradient Text Effect */}
-          <div className="pointer-events-none absolute -bottom-3 lg:-bottom-20 left-1/2 w-full -translate-x-1/2 select-none text-center">
-            <h1 className="text-[4.5rem] font-bold leading-none tracking-tighter text-transparent opacity-10 bg-gradient-to-b from-primary-foreground to-transparent bg-clip-text sm:text-[16rem] lg:text-[15rem]">
+          <div className="pointer-events-none absolute -bottom-3 lg:-bottom-20 left-1/2 w-[90%] -translate-x-1/2 select-none text-center">
+            <h1 className="text-[4rem] font-bold leading-none tracking-tighter text-transparent opacity-10 bg-gradient-to-b from-primary-foreground to-transparent bg-clip-text sm:text-[10rem] lg:text-[14rem]">
               MedMeasure
             </h1>
           </div>

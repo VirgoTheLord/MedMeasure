@@ -13,9 +13,9 @@ export default function AppShell({ children }: { children: ReactNode }) {
   const showBottomNav = pathname ? !pathname.startsWith("/login") : false;
 
   return (
-    <div className="min-h-screen bg-[#93da97]/10 text-foreground font-space-grotesk">
+    <div className="min-h-screen text-foreground font-space-grotesk">
       {/* App Header */}
-      <header className="w-full shadow-xs ">
+      <header className="w-full shadow-xs bg-[#93da97]/20 ">
         <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4">
           <Link href="/dashboard" className="flex items-center gap-2">
             <div className="grid h-9 w-9 place-items-center rounded-xl border bg-muted">

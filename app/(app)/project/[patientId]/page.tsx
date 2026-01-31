@@ -231,17 +231,17 @@ export default async function PatientProjectPage({
         </Card>
 
         <Card>
-          <CardContent className="p-5 space-y-3">
+          <CardContent className="p-4 space-y-3">
             <p className="text-sm font-semibold">Quick Actions</p>
 
-            <Link href="/new">
+            <Link href="/new" className="block w-full">
               <Button className="w-full gap-2">
                 <Camera className="h-4 w-4" />
                 Capture New Observation
               </Button>
             </Link>
 
-            <Link href="/open">
+            <Link href="/open" className="block w-full">
               <Button variant="outline" className="w-full">
                 Search Another Patient
               </Button>

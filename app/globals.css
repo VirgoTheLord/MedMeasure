@@ -164,7 +164,6 @@
   html,
   body {
     overscroll-behavior-y: none;
-    height: 100%;
     @apply bg-[#93da97]/10 text-foreground;
   }
 }

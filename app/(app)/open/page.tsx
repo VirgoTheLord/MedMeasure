@@ -41,19 +41,19 @@ export default function OpenProjectPage() {
       </section>
 
       <Card>
-        <CardHeader>
-          <CardTitle className="text-base">Find patient</CardTitle>
-        </CardHeader>
-        <CardContent className="flex flex-col gap-3 sm:flex-row">
-          <Input
-            placeholder="Example: PT-1024"
-            value={patientId}
-            onChange={(e) => setPatientId(e.target.value)}
-          />
-          <Button className="gap-2 sm:w-40">
-            <Search className="h-4 w-4" />
-            Search
-          </Button>
+        <CardContent className="p-4 space-y-3">
+          <p className="text-lg font-bold">Find patient</p>
+          <div className="flex flex-col gap-3 sm:flex-row">
+            <Input
+              placeholder="Example: PT-1024"
+              value={patientId}
+              onChange={(e) => setPatientId(e.target.value)}
+            />
+            <Button className="gap-2 sm:w-40">
+              <Search className="h-4 w-4" />
+              Search
+            </Button>
+          </div>
         </CardContent>
       </Card>
 
@@ -78,7 +78,7 @@ export default function OpenProjectPage() {
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {results.map((p) => (
               <Card key={p.patientId} className="overflow-hidden">
-                <CardContent className="p-5 space-y-4">
+                <CardContent className="p-4 space-y-4">
                   <div className="flex items-start justify-between gap-3">
                     <div>
                       <p className="text-sm font-semibold">
