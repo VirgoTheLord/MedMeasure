@@ -11,6 +11,9 @@ import {
   ShieldCheck,
   Smartphone,
   Database,
+  Github,
+  Twitter,
+  Linkedin,
 } from "lucide-react";
 import { MiniPill } from "@/components/landing/MiniPill";
 import { Step } from "@/components/landing/Step";
@@ -143,7 +146,7 @@ export default function HomePage() {
         </section>
 
         {/* Trusted / Stats strip */}
-        <section className="border-y bg-[#5e936c] font-space-grotesk">
+        <section className="border-y bg-[#5e936c]/10 backdrop-blur-sm font-space-grotesk">
           <div className="mx-auto grid max-w-6xl grid-cols-2 gap-4 px-4 py-8 sm:grid-cols-4">
             <Stat label="Mobile-first UI" value="360px+" />
             <Stat label="Core flows" value="New / Open" />
@@ -285,13 +288,13 @@ export default function HomePage() {
         </section>
 
         {/* CTA */}
-        <section className="border-y bg-[#5e936c] font-space-grotesk">
+        <section className="border-t bg-[#5e936c] font-space-grotesk">
           <div className="mx-auto flex w-full max-w-6xl flex-col items-center justify-between gap-6 px-4 py-12 text-center sm:py-16 lg:flex-row lg:text-left">
             <div className="max-w-2xl">
               <h3 className="text-xl font-semibold tracking-tight sm:text-3xl text-[#e6f7df]">
                 Ready to Transform Wound Care?
               </h3>
-              <p className="mt-2 text-sm sm:text-base text-[#93da97]">
+              <p className="mt-2 text-sm sm:text-base text-primary-foreground/70">
                 Designed for seamless integration into clinical workflows. Reliable 
                 detection, precise correction, and accurate measurements.
               </p>
@@ -316,23 +319,77 @@ export default function HomePage() {
         </section>
 
         {/* Footer */}
-        <footer className="border-t font-space-grotesk">
-          <div className="mx-auto flex w-full max-w-6xl flex-col gap-4 px-4 py-10 sm:flex-row sm:items-center sm:justify-between">
-            <div className="flex items-center gap-2">
-              <div className="grid h-9 w-9 place-items-center rounded-xl border bg-secondary/20 text-secondary-foreground">
-                <PencilRuler className="h-5 w-5" />
-              </div>
-              <div>
-                <p className="text-sm font-semibold">MedMeasure</p>
-                <p className="text-xs text-muted-foreground">
-                  Precision Wound Measurement System
+        {/* Footer */}
+        <footer className="relative overflow-hidden bg-primary text-primary-foreground font-space-grotesk">
+          <div className="relative z-10 mx-auto w-full max-w-6xl px-4 py-16 sm:py-24">
+            <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+              <div className="flex flex-col gap-4">
+                <div className="flex items-center gap-2">
+                  <div className="grid h-10 w-10 place-items-center rounded-xl bg-primary-foreground/10 text-primary-foreground border border-primary-foreground/20">
+                    <PencilRuler className="h-5 w-5" />
+                  </div>
+                  <span className="text-xl font-bold tracking-tight">
+                    MedMeasure
+                  </span>
+                </div>
+                <p className="max-w-xs text-sm text-primary-foreground/70">
+                  Clinical grade wound measurement and tracking platform for modern
+                  healthcare providers.
                 </p>
+                <div className="flex items-center gap-4 text-primary-foreground/70">
+                  <Github className="h-5 w-5 cursor-pointer hover:text-primary-foreground transition-colors" />
+                  <Twitter className="h-5 w-5 cursor-pointer hover:text-primary-foreground transition-colors" />
+                  <Linkedin className="h-5 w-5 cursor-pointer hover:text-primary-foreground transition-colors" />
+                </div>
+              </div>
+
+              <div>
+                <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-primary-foreground/90">
+                  Product
+                </h4>
+                <div className="flex flex-col gap-3 text-sm text-primary-foreground/70">
+                  <a href="#" className="hover:text-primary-foreground transition-colors">Features</a>
+                  <a href="#" className="hover:text-primary-foreground transition-colors">Pricing</a>
+                  <a href="#" className="hover:text-primary-foreground transition-colors">Integrations</a>
+                  <a href="#" className="hover:text-primary-foreground transition-colors">Changelog</a>
+                </div>
+              </div>
+
+              <div>
+                <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-primary-foreground/90">
+                  Company
+                </h4>
+                <div className="flex flex-col gap-3 text-sm text-primary-foreground/70">
+                  <a href="#" className="hover:text-primary-foreground transition-colors">About Us</a>
+                  <a href="#" className="hover:text-primary-foreground transition-colors">Careers</a>
+                  <a href="#" className="hover:text-primary-foreground transition-colors">Contact</a>
+                  <a href="#" className="hover:text-primary-foreground transition-colors">Blog</a>
+                </div>
+              </div>
+
+              <div>
+                <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-primary-foreground/90">
+                  Legal
+                </h4>
+                <div className="flex flex-col gap-3 text-sm text-primary-foreground/70">
+                  <a href="#" className="hover:text-primary-foreground transition-colors">Privacy Policy</a>
+                  <a href="#" className="hover:text-primary-foreground transition-colors">Terms of Service</a>
+                  <a href="#" className="hover:text-primary-foreground transition-colors">GDPR</a>
+                </div>
               </div>
             </div>
 
-            <div className="text-xs text-muted-foreground">
-              © {new Date().getFullYear()} MedMeasure. All rights reserved.
+            <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-primary-foreground/20 pt-8 text-xs text-primary-foreground/60 sm:flex-row">
+              <p>© {new Date().getFullYear()} MedMeasure. All rights reserved.</p>
+              <p>Made with NextJS.</p>
             </div>
+          </div>
+
+          {/* Large Gradient Text Effect */}
+          <div className="pointer-events-none absolute -bottom-3 lg:-bottom-20 left-1/2 w-full -translate-x-1/2 select-none text-center">
+            <h1 className="text-[4.5rem] font-bold leading-none tracking-tighter text-transparent opacity-10 bg-gradient-to-b from-primary-foreground to-transparent bg-clip-text sm:text-[16rem] lg:text-[15rem]">
+              MedMeasure
+            </h1>
           </div>
         </footer>
       </div>

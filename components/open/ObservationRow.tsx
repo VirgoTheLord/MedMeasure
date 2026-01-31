@@ -11,7 +11,7 @@ export function ObservationRow({
 }) {
   return (
     <Card className={isLatest ? "border-foreground/20" : ""}>
-      <CardContent className="p-4">
+      <CardContent className="p-4 font-space-grotesk">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <div className="space-y-1">
             <div className="flex items-center gap-2">

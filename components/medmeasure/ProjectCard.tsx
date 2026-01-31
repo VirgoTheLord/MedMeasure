@@ -6,7 +6,7 @@ import type { ProjectSummary } from "@/lib/types";
 
 export default function ProjectCard({ project }: { project: ProjectSummary }) {
   return (
-    <Card className="h-full overflow-hidden">
+    <Card className="h-full overflow-hidden font-space-grotesk">
       <CardContent className="p-5">
         <div className="flex items-start justify-between gap-3">
           <div>

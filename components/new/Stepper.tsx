@@ -15,7 +15,7 @@ export function Stepper({ step }: { step: StepId }) {
   return (
     <Card>
       <CardContent className="p-4">
-        <div className="grid grid-cols-4 gap-2">
+        <div className="grid grid-cols-4 gap-2 font-space-grotesk">
           {steps.map((s) => {
             const active = step === s.id;
             const done = step > (s.id as StepId);

@@ -15,7 +15,7 @@ export function SummaryCard({
 }) {
   return (
     <Card className="h-full">
-      <CardContent className="p-4">
+      <CardContent className="p-4 font-space-grotesk">
         <div className="flex items-start justify-between gap-3">
           <div>
             <p className="text-xs text-muted-foreground">{label}</p>

@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "MedMeasure | Precision Wound Tracking",
+  title: "MedMeasure",
   description: "Advanced digital wound measurement and tracking platform for clinicians.",
 };
 

@@ -21,7 +21,7 @@ export default function LoginPage() {
   };
 
   return (
-    <main className="min-h-screen bg-background text-foreground">
+    <main className="min-h-screen bg-[#93da97]/10 text-foreground font-space-grotesk">
       <header className="sticky top-0 z-40 w-full shadow-xs">
         <div className="mx-auto flex h-14 w-full max-w-6xl items-center justify-between px-4">
           <Link href="/" className="flex items-center gap-2">

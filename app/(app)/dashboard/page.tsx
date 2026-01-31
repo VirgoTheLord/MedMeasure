@@ -11,7 +11,7 @@ export default function DashboardPage() {
   return (
     <div className="space-y-6">
       {/* Top intro */}
-      <section className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+      <section className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between font-space-grotesk ">
         <div>
           <Badge variant="secondary">Dashboard</Badge>
           <h1 className="mt-2 text-2xl font-semibold tracking-tight">

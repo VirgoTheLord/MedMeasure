@@ -13,8 +13,8 @@ export function Step({
         {index}
       </div>
       <div>
-        <p className="text-sm font-semibold">{title}</p>
-        <p className="mt-1 text-sm text-muted-foreground">{desc}</p>
+        <p className="-mt-0.5 text-sm font-semibold">{title}</p>
+        <p className="mt-0.5 text-sm text-muted-foreground">{desc}</p>
       </div>
     </div>
   );
